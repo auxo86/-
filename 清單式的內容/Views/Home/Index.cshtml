@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @*<select>
+            <option value="value">test1</option>
+            <option value="value">test2</option>
+            <option value="value">test3</option>
+            <option value="value">test4</option>
+        </select>*@
+        <select>
+            @foreach (var item in ViewBag.ary1)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+    </div>
+</body>
+</html>
