@@ -11,6 +11,7 @@ namespace 清單式的內容
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            //為了避免路由到特定的資源設定檔
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
